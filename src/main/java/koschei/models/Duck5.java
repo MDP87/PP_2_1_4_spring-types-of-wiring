@@ -7,14 +7,18 @@ import org.springframework.stereotype.Component;
 public class Duck5 {
 
     Egg6 egg6;
-    @Autowired
+
     public Duck5(Egg6 egg6) {
+        this.egg6 = egg6;
+    }
+    @Autowired
+    public void setEgg6(Egg6 egg6) {
         this.egg6 = egg6;
     }
 
 
     @Override
     public String toString() {
-        return ", в утке яйцо " + "" + egg6.toString();
+        return ", в утке яйцо " + "" + egg6;
     }
 }

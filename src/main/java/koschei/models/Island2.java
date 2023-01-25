@@ -10,9 +10,12 @@ public class Island2 {
     public Island2(Wood3 wood) {
         this.wood = wood;
     }
+    public  void setWood(Wood3 wood) {
+        this.wood = wood;
+    }
 
     @Override
     public String toString() {
-        return ", на острове дерево " + wood.toString();
+        return ", на острове дерево " + wood;
     }
 }
